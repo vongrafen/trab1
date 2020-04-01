@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pr-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,38 +12,69 @@
     <link href="card.css" rel="stylesheet">
 
     <title>Jurassic Consulting</title>
-  </head>
+</head>
 
-  <ul class="navbar">
-    <li class="navbar-item"><a class="active" href="#home">Inicio</a></li>
-    <li class="navbar-item"><a href="#whoareus">Quem somos</a></li>
-    <li class="navbar-item"><a href="#ourservices">Nossos serviços</a></li>
-    <li class="navbar-item"><a href="#clients">Clientes</a></li>
-    <li class="navbar-item"><a href="#location">Localização</a></li>
-    <li class="navbar-item"><a href="contact.html">Contato</a></li>
-  </ul>
+<ul class="navbar">
+    <li class="navbar-item"><a class="active" href="main.html">Inicio</a></li>
+    <li class="navbar-item"><a href="whoareus.html">Quem somos</a></li>
+    <li class="navbar-item"><a href="ourservices.html">Nossos serviços</a></li>
+    <li class="navbar-item"><a href="clients.html">Clientes</a></li>
+    <li class="navbar-item"><a href="products.html">Produtos</a></li>
+    <li class="navbar-item"><a href="#contact">Contato</a></li>
+</ul>
 
-  <body>
+<body>
     <div class="container">
-      <div class="card">
+        <div class="card">
 
-      </div>
+        </div>
 
-      <div class="card">
+        <div class="card">
 
-      </div>
+        </div>
 
-      <div class=" card">
+        <div class=" card">
 
-      </div>
+        </div>
     </div>
 
+</body>
 
+<footer class=" footer">
+    <br><br>
+    <title>Localização</title>
+    <div id="mapa"></div>
 
-  </body>
-
-  <footer class=" footer">
-    <p>© 2020 Feito com <b style="color: red;">❤</b> por Vongrafen Company. Todos os direitos reservados</p>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqoon0XxFevdZdbG_cUr8OlCis6S3TyWM &callback=inicializar">
+    </script>
+    <style>
+        #mapa {
+            height: 200px;
+            width: 100%;
+        }
+    </style>
+    <p>© 2020 Feito com <b style="color: red;">❤</b> por Vongrafen&Sassi Company. Todos os direitos reservados</p>
     <p class="pol"><a href="#politica">Política de Privacidade</a> | <a href="#termos">Termos de Uso</a> | <a href="#empregos">Empregos</a> | <a href="#investidores">Investidores</a> | <a href="#conosco">Fale Conosco</a></p>
-  </footer>
+</footer>
+
+<script>
+    function inicializar() {
+        var coordenadas = {
+            lat: -28.388341,
+            lng: -53.929673
+        };
+
+        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+            zoom: 15,
+            center: coordenadas
+        });
+
+        var marker = new google.maps.Marker({
+            position: coordenadas,
+            map: mapa,
+            title: 'Empresa'
+        });
+    }
+</script>
+
 </html>
