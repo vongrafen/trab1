@@ -26,12 +26,16 @@
 <body>
     <div class="container">
 
-        <img width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="left" onmouseover="javascript:mostra();" onmouseout="esconde();" alt="Manutenção de Hardware" src="img/servicos/hardware.png" />
-        <img width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="center" alt="Remoção de vírus" src="img/servicos/virus.png" />
-        <img width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="right" alt="Formatação" src="img/servicos/formatar.png" />
-        <label id=c onteudo> Saiba mais </label>
+        <a href="ourservices.html">
+            <img width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="center" alt="Remoção de vírus" src="img/servicos/virus.png" />
+        </a>
+        <a href="ourservices.html">
+            <img width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="right" alt="Formatação" src="img/servicos/formatar.png" />
+        </a>
+        <a href="ourservices.html">
+            <img name=“imagem1” width="250px" height="250px" vspace="10px" hspace="15px" border="10px" align="left" alt="Manutenção de Hardware" src="img/servicos/hardware.png" />
+        </a>
         <br><br><br><br><br><br><br><br>
-
     </div>
 
 </body>
@@ -70,18 +74,6 @@
             map: mapa,
             title: 'Empresa'
         });
-    }
-
-    function mostra() {
-
-        document.getElementById('conteudo').style.display = 'block';
-
-    }
-
-    function esconde() {
-
-        document.getElementById('conteudo').style.display = 'none';
-
     }
 </script>
 
