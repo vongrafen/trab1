@@ -45,40 +45,8 @@
 </div>
 
 <footer class=" footer">
-    <br><br>
-    <title>Localização</title>
-    <div id="mapa"></div>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqoon0XxFevdZdbG_cUr8OlCis6S3TyWM &callback=inicializar">
-    </script>
-    <style>
-        #mapa {
-            height: 200px;
-            width: 100%;
-        }
-    </style>
     <p>© 2020 Feito com <b style="color: red;">❤</b> por Vongrafen&Sassi Company. Todos os direitos reservados</p>
     <p class="pol"><a href="#politica">Política de Privacidade</a> | <a href="#termos">Termos de Uso</a> | <a href="#empregos">Empregos</a> | <a href="#investidores">Investidores</a> | <a href="#conosco">Fale Conosco</a></p>
 </footer>
-
-<script>
-    function inicializar() {
-        var coordenadas = {
-            lat: -28.388341,
-            lng: -53.929673
-        };
-
-        var mapa = new google.maps.Map(document.getElementById('mapa'), {
-            zoom: 15,
-            center: coordenadas
-        });
-
-        var marker = new google.maps.Marker({
-            position: coordenadas,
-            map: mapa,
-            title: 'Empresa'
-        });
-    }
-</script>
 
 </html>
