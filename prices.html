@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
-    <link href="contact.css" rel="stylesheet">
+    <link href="table.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
@@ -16,29 +16,41 @@
 <ul class="navbar">
     <li class="navbar-item"><a href="main.html">Inicio</a></li>
     <li class="navbar-item"><a href="whoareus.html">Quem somos</a></li>
-    <li class="navbar-item"><a class="active" href="ourservices.html">Nossos serviços</a></li>
-    <li class="navbar-item"><a href="clients.html">Clientes</a></li>
+    <li class="navbar-item"><a class="active" href="prices.html">Preços</a></li>
     <li class="navbar-item"><a href="contact.html">Contato</a></li>
 </ul>
 
-<div class="container">
-    <header>
-        <div class="row"></div>
-        <h1>Nossos Serviços</h1>
-</div>
-</header>
-
 <body>
-    <p>Nós prestamos basicamente 3 serviços:
-        <li>Formatações</li>
-        <p>O computador está lento? Então VAMOS formatar!!!!</p>
-        <li>Limpesa de vírus</li>
-        <p>O antivirus já faleceu, e quando covê clica em um site, abre propagandas indesejadas? VAMOS fazer uma limpesa de vírus!!!!</p>
-        <li>Manutenção de Hardware</li>
-        <p>Ops! Sua tela quebrou? Seu teclado parou de funcionar? VAMOS fazer uma manutenção!!</p>
 
-
-    </p>
+    <div class="table-title">
+        <h3>Tabela de Preços</h3>
+    </div>
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th class="text-left">Serviço</th>
+                <th class="text-left">Prazo</th>
+                <th class="text-left">Preço</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <tr>
+                <td class="text-left">Formatação</td>
+                <td class="text-left">2 dias úteis</td>
+                <td class="text-left">R$ 95,00</td>
+            </tr>
+            <tr>
+                <td class="text-left">Remoção de Vírus</td>
+                <td class="text-left">1 dia útil</td>
+                <td class="text-left">R$ 45,00</td>
+            </tr>
+            <tr>
+                <td class="text-left">Manutenção de Hardware</td>
+                <td class="text-left">Consulte-nos</td>
+                <td class="text-left">Consulte-nos</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 
